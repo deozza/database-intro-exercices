@@ -1,3 +1,9 @@
+
+DROP DATABASE IF EXISTS contact;
+
+CREATE DATABASE contact;
+USE contact;
+
 CREATE TABLE DemandeContact (
     id_contact INT AUTO_INCREMENT PRIMARY KEY,
     nom VARCHAR(100) NOT NULL,
