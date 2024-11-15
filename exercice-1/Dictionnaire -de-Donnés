@@ -13,9 +13,9 @@ Une consultation est identifiée par un numéro. Il faut également enregistrer 
 | espece            |             | animeaux      | VARCHAR,NOT NULL |             |
 | nom               |             | animeaux      | VARCHAR,NOT NULL |             |
 | date_de_naissance |             | animeaux      | DATE             |             |
-| consultation_id   |PRIMARY KEY  | consultation  | VARCHAR,NOT NULL |             |
+| consultation_id   |PRIMARY KEY  | consultation  | VARCHAR,NOT NULL |X            |
 | date_rdv          |             | consultation  | DATETIME         |             |
-| nom_docteur       |             | consultation  | VARCHAR NOT NULL |X            |
+| nom_docteur       |             | consultation  | VARCHAR NOT NULL |             |
 | prix              |             | consultation  | VARCHAR NOT NULL |             |
 | présence_aniamle  |             | consultation  | VARCHAR          |             |
 | id_animale        |FOREIGN KEY  | consultation  | INT              |X            |
