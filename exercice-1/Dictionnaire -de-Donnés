@@ -1,18 +1,6 @@
 
-
-Dictionnaire de Donnés 
-
-| Propriété     | Commentaire | Entité        | Type     | Identifiant |
-|---------------|-------------|---------------|----------|-------------|
-| nom           |             | joueur        | VARCHAR  |             |
-| dateNaissance |             | joueur        | DATE     |             |
-| nationalite   |             | joueur        | VARCHAR  |             |
-| identifiant   |             | joueur        | INT      | X           |
-| nom           |             | sponsor       | VARCHAR  | X           |
-| joueur        | FOREIGN KEY | sponsor       | INT      |             |
-| nom           |             | tournoi       | VARCHAR  | X           |
-| date          |             | tournoi       | DATETIME |             |
-| adresse       |             | tournoi       | VARCHAR  |             |
-| identifiant   |             | participation | INT      | X           |
-| joueur        | FOREIGN KEY | participation | INT      |             |
-| tournoi       | FOREIGN KEY | participation | VARCHAR  |             |
+| Rank | THING-TO-RANK |
+|-----:|---------------|
+|     1|               |
+|     2|               |
+|     3|               |
