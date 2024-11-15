@@ -1,9 +1,22 @@
 
+Une clinique vétérinaire a besoin d'enregistrer les consultations d'animaux.
+
+Pour faire leur suivi, les informations des animaux sont sauvegardées. La clinique a alors besoin de l'espèce et de la race de l'animal, de son nom, de l'identifiant de sa puce, de sa date de naissance.
+
+Une consultation est identifiée par un numéro. Il faut également enregistrer la date et l'heure du rendez-vous, le nom du docteur, si l'animal s'est présenté et son tarif. Il faut également savoir quel animal était l'objet de la consultation.
 
 
-
-| Rank | THING-TO-RANK |
-|-----:|---------------|
-|     1|               |
-|     2|               |
-|     3|               |
+| Propriété         | Commentaire | Entité        | Type             | Identifiant |
+|-------------------|-------------|---------------|------------------|-------------|
+| puce_id           |PRIMARY KEY  | animeaux      | VARCHAR,NOT NULL |X            |
+| race              |             | animeaux      | VARCHAR,NOT NULL |             |
+| espece            |             | animeaux      | VARCHAR,NOT NULL |             |
+| nom               |             | animeaux      | VARCHAR,NOT NULL |             |
+| date_de_naissance |             | animeaux      | DATE             |             |
+| consultation_id   |PRIMARY KEY  | consultation  | VARCHAR,NOT NULL |             |
+| date_rdv          |             | consultation  | DATETIME         |             |
+| nom_docteur       |             | consultation  | VARCHAR NOT NULL |X            |
+| prix              |             | consultation  | VARCHAR NOT NULL |             |
+| présence_aniamle  |             | consultation  | VARCHAR          |             |
+| id_animale        |FOREIGN KEY  | consultation  | INT              |X            |
+|                   |             |               |                  |             |
