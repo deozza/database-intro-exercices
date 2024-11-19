@@ -1,1 +1,32 @@
+Un fabricant de guitare a besoin de sauvegarder ses modèles de guitare, les devis qu'il propose à ses clients ainsi que les factures qu'il réalise à partir de ces devis.
+
+Les guitares sont identifiées par un nom de modèle. Elles sont caractérisées par un nombre de cordes, un nombre de micro, une matière pour le corps, une matière pour la table et une matière pour le manche.
+
+Un devis est identifié par un numéro. Il contient le nom et le prénom du client. Chaque devis a une date d'envoi. Un devis est relié à un modèle de guitare.
+
+Une facture est identifiée par un numéro. Chaque facture a une date d'envoi et est reliée à un devis. Il faut également savoir si la facture a été payée ou non.
+
+Écrire le dictionnaire de données.
+À partir du dictionnaire, réaliser le MCD.
+
+
+| Propriété        | Commentaire  | Entité     | Type      | Identifiant  |
+|------------------|--------------|------------|-----------|--------------|
+| nom_modele       |              | guitare    | VARCHAR   | X            |
+| nombre_corde     |              | guitare    | INT       |              |
+| nombre_micro     |              | guitare    | INT       |              |
+| matiere_corps    |              | guitare    | VARCHAR   |              |
+| matiere_table    |              | guitare    | VARCHAR   |              |
+| matiere_manche   |              | guitare    | VARCHAR   |              |
+| num_devis        |              | devis      | INT       | X            |
+| nom_client       |              | devis      | VARCHAR   |              |
+| prenom_client    |              | devis      | VARCHAR   |              |
+| date_enovi       |              | devis      | DATE      |              |
+| moedele_guitare  | FOREIGN KEY  | devis      | VARCHAR   |              |
+| num_facture      |              | facture    | INT       | X            |
+| date_envoi       |              | facture    | DATE      |              |
+| facture-paye     |              | facture    | BOOLEAN   |              |
+
+
+
 
