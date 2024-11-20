@@ -1,0 +1,8 @@
+1. Le patient peut effectuer plusieurs visites.
+
+2. Non, car une consultation ne peut contenir que 1 patient. Le médecin peut avoir plusieurs consultation mais pas plusieurs patients dans la même consultation.
+
+3. Oui, car une consulation peut avoir été préscrit 0 à n médicament.
+
+4. Oui, car un médicament peut être préscrit par plusieurs consulation. En effet, une consulation ne peut être que donné par 1 médecin.
+Donc si un médiacment peut être préscrit dans plusieurs différentes consultations, alors cela veut dire que plusieurs médecins peuvent préscrire le même médicament.
