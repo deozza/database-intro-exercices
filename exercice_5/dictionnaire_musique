@@ -1,1 +1,23 @@
 
+ 
+
+| Propriété     | Commentaire | Entité  | Type              | Identifiant |
+|---------------|-------------|---------|-------------------|-------------|
+| id_contact    |             | contact | VARCHAR, NOT NULL | X           |
+| type_cours    |             | contact | VARCHAR, NOT NULL |             |
+| tranche_age   |             | contact | INT, NOT NULL     |             |
+| nom           |             | contact | VARCHAR, NOT NULL |             |
+| prenom        |             | contact | VARCHAR, NOT NULL |             |
+| age           |             | contact | INT, NOT NULL     |             |
+| email         |             | contact | VARCHAR, NOT NULL |             |
+| telephone     |             | contact | INT, NOT NULL     |             |
+| sujet         |             | contact | VARCHAR, NOT NULL |             |
+| date_contact  |             | contact | DATE, NOT NULL    |             |
+|               |             |         |                   |             |  
+
+
+
+
+
+
+
