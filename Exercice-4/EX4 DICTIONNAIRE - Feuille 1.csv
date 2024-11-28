@@ -5,7 +5,7 @@ nb_micro,INT,Guitare,NOT NULL
 matiere_corps,VARCHAR(255),Guitare,NOT NULL
 matiere_table,VARCHAR(255),Guitare,NOT NULL
 matiere_manche,VARCHAR(255),Guitare,NOT NULL
-numero,INT 13,Devis,PRIMARY KEY
+numero,INT,Devis,PRIMARY KEY
 nom_client,VARCHAR(255),Devis,NOT NULL
 prenom_client,VARCHAR(255),Devis,NOT NULL
 date_envoi,DATE,Devis,NOT NULL
