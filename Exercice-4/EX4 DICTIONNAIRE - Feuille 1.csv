@@ -5,7 +5,7 @@ nb_micro,INT,Guitare,NOT NULL
 matiere_corps,VARCHAR(255),Guitare,NOT NULL
 matiere_table,VARCHAR(255),Guitare,NOT NULL
 matiere_manche,VARCHAR(255),Guitare,NOT NULL
-numero,INT,Devis,PRIMARY KEY
+numero,INT 13,Devis,PRIMARY KEY
 nom_client,VARCHAR(255),Devis,NOT NULL
 prenom_client,VARCHAR(255),Devis,NOT NULL
 date_envoi,DATE,Devis,NOT NULL
@@ -13,4 +13,4 @@ modele_guitare,VARCHAR(255),Devis,"FOREIGN KEY, NOT NULL"
 numéro,INT,Facture,PRIMARY KEY
 date_envoi,DATE,Facture,NOT NULL
 is_paid,BOOLEAN,Facture,NOT NULL
-numero_devis,INT,Facture,NOT NULL
+numero_devis,INT,Facture,"NOT NULL, PRIMARY KEY"
