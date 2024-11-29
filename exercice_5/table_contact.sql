@@ -1,3 +1,6 @@
+CREATE DATABASE Ecole_musique; 
+
+USE Ecole_musique;
 
 CREATE TABLE contact (
 id_contact VARCHAR(255) NOT NULL PRIMARY KEY,
