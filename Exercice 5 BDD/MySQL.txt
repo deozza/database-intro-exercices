@@ -1,0 +1,17 @@
+REATE DATABASE EcoleMusique;
+
+USE EcoleMusique;
+
+CREATE TABLE Contact (
+    idContact INT AUTO_INCREMENT PRIMARY KEY,
+    sujet VARCHAR(255) NOT NULL,
+    typeCours VARCHAR(255) NOT NULL,
+    trancheAge VARCHAR(50),
+    age INT,
+    nom VARCHAR(100) NOT NULL,
+    prenom VARCHAR(100) NOT NULL,
+    email VARCHAR(255) NOT NULL,
+    telephone VARCHAR(20),
+    message TEXT,
+    datePriseContact DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP
+);

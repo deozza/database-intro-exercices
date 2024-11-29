@@ -1,0 +1,12 @@
+Propriété,type,entité,contrainte
+id_contact,INT 13,contact,"PRIMARY KEY,not null, auto increment"
+type_cours,VARCHAR 255,contact,not null
+sujet,VARCHAR 255,contact,NOT NULL
+tranche_age,VARCHAR 255,contact,NOT NULL
+prenom,VARCHAR 255,contact,NOT NULL
+email,VARCHAR 255,contact,NOT NULL
+age,INT 13,contact,NOT NULL
+tel,VARCHAR 255,contact,NOT NULL
+nom,VARCHAR 255,contact,NOT NULL
+date_contact,datetime,contact,NOT NULL
+message,VARCHAR 255,contact,NOT NULL

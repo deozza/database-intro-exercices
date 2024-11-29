@@ -1,0 +1,12 @@
+Propriété,Type,Entité,Contrainte
+Date_et_heure_rdv,date Time,consultation,not null
+Nom_docteur,varchar 255,consultation,not null
+Presente_animal,booleen,consultation,not null
+Tarif,"float 6,2",consultation,not null
+id_de_puce,varchar 255,consultation,foreign key
+id_de_puce,varchar 255,animal,"Unique ,primary key,not null"
+espéce,varchar 255,animal,not null
+Race,varchar 255,animal,not null
+Nom,varchar 255,animal,not null
+Date_de_naissanace,date,animal,not null
+Numero_consultation,int,consultation,"primary key , not null ,autoincremente"
