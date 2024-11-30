@@ -1,9 +1,9 @@
 Propriété,Type,Entité,Commentaire
-espece,VARCHAR (255),Animal,NOT NULL
-race,VARCHAR (255),Animal,NOT NULL
-nom,VARCHAR (255),Animal,PRIMARY KEY
-id_puce,INT,Animal,PRIMARY KEY
-date_de_naissance,DATE,Animal,NOT NULL
+espece,VARCHAR (255),animal,NOT NULL
+race,VARCHAR (255),animal,NOT NULL
+nom,VARCHAR (255),animal,NOT NULL
+id_puce,INT,animal,PRIMARY KEY
+date_de_naissance,DATE,animal,NOT NULL
 id_consultation,INT,Consulter,PRIMARY KEY
 date_rdv,DATE,Consulter,NOT NULL
 heure_rdv,DATETIME,Consulter,NOT NULL
