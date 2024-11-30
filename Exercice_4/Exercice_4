@@ -1,0 +1,16 @@
+| Propriété  | Type | Table | Contraintes |
+| --- | --- | --- | --- |
+| nom_modele | VARSHAR 255 | Guitare | PRIMARY KEY |
+| nb_corde | INT | Guitare | NOT NULL |
+| nb_micro | INT | Guitare | NOT NULL |
+| matiere_corps | VARSHAR 255 | Guitare | NOT NULL |
+| matiere_table | VARSHAR 255 | Guitare | NOT NULL |
+| numero  | INT  | Devis | PRIMARY KEY |
+| nom_client | VARSHAR 255 | Devis | NOT NULL |
+| prenom_client | VARSHAR 255 | Devis | NOT NULL |
+| date_envoie | DATE | Devis | NOT NULL |
+| modele_guitare | VARSHAR 255 | Devis | FOREIGN |
+| numero | INT | Facture | PRIMARY KEY |
+| date_envoi | DATE | Facture | NOT NULL |
+| facture_payer | BOOLEAN | Facture | NOT NULL |
+| numero_devis | INT | Facture | PRIMARY KEY  |
