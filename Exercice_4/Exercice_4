@@ -6,12 +6,12 @@
 | matiere_corps | VARSHAR 255 | Guitare | NOT NULL |
 | matiere_table | VARSHAR 255 | Guitare | NOT NULL |
 | matiere_manche | VARSHAR 255 | Guitare | NOT NULL |
-| numero  | INT  | Devis | PRIMARY KEY |
+| numero_devis  | INT  | Devis | PRIMARY KEY |
 | nom_client | VARSHAR 255 | Devis | NOT NULL |
 | prenom_client | VARSHAR 255 | Devis | NOT NULL |
 | date_envoie | DATE | Devis | NOT NULL |
 | modele_guitare | VARSHAR 255 | Devis | FOREIGN |
-| numero | INT | Facture | PRIMARY KEY |
+| numero_facture | INT | Facture | PRIMARY KEY |
 | date_envoi | DATE | Facture | NOT NULL |
 | facture_payer | BOOLEAN | Facture | NOT NULL |
 | numero_devis | INT | Facture | FOREIGN KEY  |
