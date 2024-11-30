@@ -1,2 +1,5 @@
 Propriété, Commentaire, Entité, Type, Identifiant
 espèce, "", animal, VARCHAR(255), X
+race, "", animal, VARCHAR(255), ""
+nom, "", animal, VARCHAR(255), ""
+date_de_naissance, "", animal, VARCHAR(255), ""
