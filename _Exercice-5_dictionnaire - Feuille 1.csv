@@ -1,0 +1,12 @@
+Propriété,Entité,Type,Identifant
+id_contact,Contact,INT,PK
+sujet_contact,Contact,VARCHAR (255),
+type_cours,Contact,VARCHAR (255),
+tranche_age,Contact,VARCHAR (20),
+age,Contact,INT,
+nom,Contact,VARCHAR (255),
+prenom,Contact,VARCHAR (255),
+email,Contact,VARCHAR (255),
+telephone,Contact,VARCHAR (10),
+message,Contact,TEXT,
+date_prise_contact,Contact,DATE,

@@ -1,0 +1,16 @@
+Propritété,Entité,Type,Identifiant
+nom_modèle,Guitare,VARCHAR (255),PK
+nb_cordes,Guitare,INT,
+nb_micros,Guitare,INT,
+matière_corps,Guitare,VARCHAR (255),
+matière_table,Guitare,VARCHAR (255),
+matière_manche,Guitare,VARCHAR (255),
+numéro_devis,Devis,INT,PK
+ nom_client,Devis,VARCHAR (255),
+prenom_client,Devis,VARCHAR (255),
+date_envoi_devis,Devis,DATE,
+guitare,Devis,VARCHAR (255),FK
+numéro_facture,Facture,INT,PK
+date_envoi_facture,Facture,DATE,
+facture_payee,Facture,BOOLEAN,
+devis,Facture,INT,FK

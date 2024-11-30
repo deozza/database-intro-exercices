@@ -1,0 +1,14 @@
+Entité,Propriété,Type,Contraintes
+Animaux,id_animal,INT,PRIMARY KEY
+,espece,VARCHAR (255),NOT NULL
+,race,VARCHAR (255),NOT NULL
+,nom,VARCHAR (255),NOT NULL
+,id_puce,VARCHAR (255),NOT NULL
+,date_naissance,DATE,NOT NULL
+Consultations,id_consultation,INT,PRIMARY KEY
+,date_rdv,DATE,NOT NULL
+,heure_rdv,TIME,NOT NULL
+,docteur_nom,VARCHAR (255),NOT NULL
+,presence_animal,BOOLEAN,NOT NULL
+,tarif,"DECIMAL (6,2)",NOT NULL
+,animal_id,INT,FOREIGN KEY
