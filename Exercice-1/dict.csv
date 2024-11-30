@@ -1,6 +1,6 @@
 Propriété, Commentaire, Entité, Type, Identifiant
 identifiant_puce, "", animal, VARCHAR(255), X 
-espèce, "", animal, VARCHAR(255), ""
+espece, "", animal, VARCHAR(255), ""
 race, "", animal, VARCHAR(255), ""
 nom, "", animal, VARCHAR(255), ""
 date_de_naissance, "", animal, DATE, ""
