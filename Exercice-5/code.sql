@@ -7,7 +7,7 @@ CREATE TABLE priseContact (
     nom VARCHAR(255) NOT NULL,
     prenom VARCHAR(255) NOT NULL,
     email VARCHAR(255) NOT NULL,
-    telephone INT(13) NOT NULL,
+    telephone VARCHAR(13) NOT NULL,
     message VARCHAR(MAX) NOT NULL,
     date_contact DATE NOT NULL DEFAULT CURRENT_TIMESTAMP
 );
