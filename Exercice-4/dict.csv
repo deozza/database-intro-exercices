@@ -9,4 +9,3 @@ numero, "", devis, INT, X
 nomClient, "", devis, VARCHAR(255), ""
 prenomclient, "", devis, VARCHAR(255), ""
 date, "", devis, DATETIME, ""
-modeleGuitare, FOREIGN KEY, devis, VARCHAR(255), "" 
