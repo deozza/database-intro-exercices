@@ -1,0 +1,14 @@
+﻿Exercice 3:  Réponse aux questions
+
+
+1. Un patient peut effectuer plusieurs visites car sa cardinalité supérieure est N.
+
+
+2. Un médecin ne peut pas recevoir plusieurs patients dans la même consultation car la cardinalité 1,1 côté Consultation dans Assister montre qu'une consultation ne 
+concerne qu'un seul patient.
+
+
+3. On peut prescrire plusieurs médicaments dans la même consultation car la cardinalité supérieure est N
+
+
+4. Il est possible qu’un même médicament soit  prescrit par plusieurs médecins différents car la relation Prescrire est  associée à plusieurs consultations, et chaque consultation peut être donnée par plusieurs médecins différents.
