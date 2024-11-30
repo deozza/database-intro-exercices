@@ -1,4 +1,4 @@
-Propriété,	Commentaire,	Entité,	Type,	Identifiant
+Propriété, Commentaire,	Entité,	Type,	Identifiant
 nomModele, "", guitare, VARCHAR(255), X
 nombreCorde, "", guitare, INT, ""
 nombreMicro, "", guitare, INT, ""
@@ -8,5 +8,5 @@ matiereMache, "", guitare, VARCHAR(255), ""
 numero, "", devis, INT, X
 nomClient, "", devis, VARCHAR(255), ""
 prenomclient, "", devis, VARCHAR(255), ""
-date "", devis, DATETIME, ""
+date, "", devis, DATETIME, ""
 modeleGuitare, FOREIGN KEY, devis, VARCHAR(255), "" 
