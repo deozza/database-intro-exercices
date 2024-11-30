@@ -1,0 +1,14 @@
+| Propriété  | Type | Table | Contraintes |
+| --- | --- | --- | --- |
+| espece | VARCHAR 255 | Animal | NOT NULL |
+| race | VARCHAR 255 | Animal | NOT NULL |
+| nom_animal | VARCHAR 255 | Animal | PRIMARY KEY |
+| puce_id | INT  | Animal | UNIQUE |
+| date_naissance | DATE | Animal | NOT NULL |
+| numero_consulation | INT  | Consultation | PRIMARY KEY |
+| date_rdv | DATE | Consultation | NOT NULL |
+| heure_rdv | TIME | Consultation | NOT NULL |
+| nom_docteur | VARSHAR 255 | Consultation | NOT NULL |
+| presence_animal | BOOLEAN | Consultation | NOT NULL |
+| tarif_consultation | FLOAT 4, 2 | Consultation | NOT NULL |
+| animal_id | INT  | Animal, Consultation | FOREIGN KEY |
