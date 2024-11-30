@@ -1,0 +1,15 @@
+1) Un patient peut-il effectuer plusieur visites ?
+
+Oui il le peux avec le “n” qui ne limlite pas le nombre de consultation. 
+
+2) Un médecin peut-il recevoir plusieurs patients dans la même consultation ?
+
+Non il ne peux recevoir q’un patient par consultation.
+
+3) Peut-on prescrire plusieurs médicaments dans la même consultation ?
+
+Oui suite a une prescription il peux y avoir 0 ou un nombre infini de medicament.
+
+4) Un même médicament peut être prescrit par plusieurs médecins différents ?
+
+Non un médicament ne peut être prescrit que par un seul médecin
