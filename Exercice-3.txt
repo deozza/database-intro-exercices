@@ -1,0 +1,9 @@
+Exercice 3 :
+
+Oui, car d’après le MCD un patient assiste à une consultation au minimum 1 fois et au maximum n fois ( plusieurs )
+
+Non, car une consultation est assistée par un patient au minimum et au maximum.
+
+Oui, car un médicament peut ne pas être prescrit au minimum ou être prescrit n fois ( plusieurs ), lors d’une consultation.
+
+Oui, car un patient peut assister à une 1 ou plusieurs consultations et qu’un médicament peut ne pas être prescrit ou être prescrit plusieurs fois (n) sachant qu’une consultation est donnée par 1 médecin.
