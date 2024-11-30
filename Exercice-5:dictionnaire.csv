@@ -1,0 +1,12 @@
+Propriete,Type ,Entité ,Commentaire ,Identifiant
+id_contact,INT,contact,,X
+sujet,VARCHAR 255,contact,NOT NULL,
+type_cours,VARCHAR 255,contact,NOT NULL,
+tranche_age,INT,contact,NOT NULL,
+age,INT,visiteur ,NOT NULL,
+nom,VARCHAR 255,visiteur,NOT NULL,
+prenom,VARCHAR 255,visiteur,NOT NULL,
+adresse_mail,VARCHAR 255,visiteur,NOT NULL,
+telephone,INT 13,visiteur,NOT NULL,
+message,VARCHAR 255,visiteur,NOT NULL,
+date_contact,DATETIME,contact,FOREIGN KEY,
