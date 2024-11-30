@@ -1,0 +1,25 @@
+# BDD DM 
+#EEMI/BDD
+
+## ==🟢Animal==
+| Propriété         | Type            | Entité |
+|-------------------|-----------------|--------|
+| IdentifiantAnimal | INT PRIMARY KEY | animal |
+| Nom               | VARCHAR(50)     | animal |
+| Espece            | VARCHAR(30)     | animal |
+| Race              | VARCHAR(30)     | animal |
+| IdentifiantPuce   | VARCHAR(15)     | animal |
+| DateNaissance     | DATE            | animal |
+
+## ==🔴Consultation==
+| Propriété         | Type            | Entité       |
+|-------------------|-----------------|--------------|
+| NumConsultation   | INT PRIMARY KEY | consultation |
+| DateRendezVous    | DATE            | consultation |
+| HeureRendezVous   | TIME            | consultation |
+| NomDocteur        | VARCHAR(50)     | consultation |
+| Present           | BOOLEAN         | consultation |
+| Tarif             | DECIMAL(10,2)   | consultation |
+| IdentifiantAnimal | INT             | consultation |
+
+Daniel Fortuné, C1 B1.
