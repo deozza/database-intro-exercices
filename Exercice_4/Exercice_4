@@ -14,4 +14,4 @@
 | numero | INT | Facture | PRIMARY KEY |
 | date_envoi | DATE | Facture | NOT NULL |
 | facture_payer | BOOLEAN | Facture | NOT NULL |
-| numero_devis | INT | Facture | PRIMARY KEY  |
+| numero_devis | INT | Facture | FOREIGN KEY  |
