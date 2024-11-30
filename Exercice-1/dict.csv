@@ -8,5 +8,5 @@ numero, "", consultation, INT, X
 date, "", consultation, DATETIME, ""
 docteur, "", consultation, VARCHAR(255), ""
 présent, "", consultation, BIT, ""
-tarif, "", conultation, BOOL(6, 2), ""
+tarif, "", conultation, BOOL(6,2), ""
 puce, FOREIGN KEY, consultation, VARCHAR(255), ""
