@@ -10,3 +10,7 @@ nomClient, "", devis, VARCHAR(255), ""
 prenomclient, "", devis, VARCHAR(255), ""
 date, "", devis, DATETIME, ""
 modeleGuitare, FOREIGN KEY, devis, VARCHAR(255), ""
+numero, "", facture, INT, X
+date, "", facture, DATETIME, ""
+numeroDevis, FOREIGN KEY, facture, INT, ""
+estPaye, "", facture, BIT, ""
