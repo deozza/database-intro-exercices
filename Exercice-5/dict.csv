@@ -1,12 +1,12 @@
 Propriété, Commentaire,	Entité,	Type,	Identifiant
-identifiant, "", priseContact, INT, X
-sujet, "", priseContact, VARCHAR(255), ""
-typeCours, "", priseContact, VARCHAR(255), ""
-trancheAge, "", priseContact, VARCHAR(255), ""
-age, "", priseContact, INT, ""
-nom,"", priseContact, VARCHAR(255), ""
-prenom, "", priseContact, VARCHAR(255), ""
-email, "", priseContact, VARCHAR(255), ""
-telephone, "", priseContact, INT, ""
-message, "", priseContact, VARCHAR(MAX), ""
-date, "", priseContact, DATE, ""
+identifiant, "", prise_contact, INT, X
+sujet, "", prise_contact, VARCHAR(255), ""
+type_cours, "", prise_contact, VARCHAR(255), ""
+tranche_age, "", prise_contact, VARCHAR(255), ""
+age, "", prise_contact, INT, ""
+nom,"", prise_contact, VARCHAR(255), ""
+prenom, "", prise_contact, VARCHAR(255), ""
+email, "", prise_contact, VARCHAR(255), ""
+telephone, "", prise_contact, INT, ""
+message, "", prise_contact, VARCHAR(MAX), ""
+date, "", prise_contact, DATE, ""
