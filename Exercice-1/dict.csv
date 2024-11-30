@@ -6,7 +6,7 @@ nom, "", animal, VARCHAR(255), ""
 date_de_naissance, "", animal, DATE, ""
 numero, "", consultation, INT, X
 date, "", consultation, DATETIME, ""
-docteur, "", consultation, VARCHAR(255), ""
+nom_docteur, "", consultation, VARCHAR(255), ""
 présent, "", consultation, BIT, ""
 tarif, "", consultation, BOOL(62), ""
 puce, FOREIGN KEY, consultation, VARCHAR(255), ""
