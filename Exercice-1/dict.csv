@@ -1,4 +1,4 @@
-Propriété,Type,Entité,Commentaire
+Propriété,Type,Entité,Contraintes
 espece,VARCHAR (255),animal,NOT NULL
 race,VARCHAR (255),animal,NOT NULL
 nom,VARCHAR (255),animal,NOT NULL
