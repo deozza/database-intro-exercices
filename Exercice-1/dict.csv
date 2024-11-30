@@ -1,12 +1,2 @@
-Propriété,Type,Entité,Contraintes
-espece,VARCHAR (255),animal,NOT NULL
-race,VARCHAR (255),animal,NOT NULL
-nom,VARCHAR (255),animal,NOT NULL
-id_puce,INT,animal,PRIMARY KEY
-date_de_naissance,DATE,animal,NOT NULL
-id_consultation,INT,consultation,PRIMARY KEY
-date_rdv,DATETIME,consultation,NOT NULL
-presence,BOOLEAN,consultation,NOT NULL
-tarif,"FLOAT (6,2)",consultation,NOT NULL
-id_animal,INT,consultation,"FOREIGN KEY, NOT NULL"
-docteur,VARCHAR (255),consultation,NOT NULL
+Propriété, Commentaire, Entité, Type, Identifiant
+identifiant_puce, , VARCHAR(255), X
