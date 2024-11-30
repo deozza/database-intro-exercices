@@ -1,1 +1,11 @@
-
+| Propriété | Type | Table | Contraintes |
+| --- | --- | --- | --- |
+| contact_id | INT | Contact | PRIMARY KEY |
+| nom | VARCHAR 255 | Contact | NOT NULL |
+| prenom | VARCHAR 255 | Contact | NOT NULL |
+| email | VARCHAR 255 | Contact | NOT NULL |
+| num_telephone | INT | Contact | NOT NULL |
+| tranche_age | VARCHAR 255 | Contact | NOT NULL |
+| age | INT | Contact | NOT NULL |
+| date_contact | DATE | Contact | NOT NULL |
+| type_cours | VARCHAR 255 | Contact | NOT NULL |
