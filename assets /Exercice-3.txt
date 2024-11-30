@@ -1,1 +1,4 @@
-
+1) Oui un patient peut effectuer plusieurs visites
+2) Non le medecin &zrecoit les patients 1 par 1
+3) oui on peut prescrire plusieurs medicament lors d'une consultation
+4)non
