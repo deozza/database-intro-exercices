@@ -1,0 +1,7 @@
+Exercice 3 : 
+
+Oui un patient peut effectuer plusieurs visites car les cardinalités entre la table « patient » et la relation « assisté » (à une consultation) indique 1,N, signifiant qu’un patient peut assister a une ou plusieurs consultation(s).
+Non, un docteur ne peut recevoir qu’un seul patient par consultation. En effet, en réalité ici c’est la relation entre la table « consultation » et la relation « assister » les cardinalités sont 1,1 ce qui indique qu’une consultation peut accueillir qu’un seul patient donc pour répondre exactement à la question posée, non un médecin ne peut pas recevoir plusieurs patients dans une une seule consultation.
+Oui. Si on regarde les cardinalité entre la table « médicament » et la relation « prescrire » (0,N) elles nous indique donc que l’on peut prescrire aucun ou plusieurs médicaments dans une même consultation.
+
+Oui un même médicament peut-être prescrit par plusieurs médecins différents. Etant donné qu’il y a plusieurs consultations qui sont données par différents médecins, un même médicament peut-être prescrit par plusieurs médecins.

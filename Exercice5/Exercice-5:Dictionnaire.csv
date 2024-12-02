@@ -1,0 +1,19 @@
+﻿Propriété;Type;Entité;Contrainte;Identifiant
+Id;INT;Sujets;PRIMARY KEY, AUTO-INCREMENT;X
+Nom;VARCHAR 255;Sujets;NOT NULL;
+Id;INT;Contacts;PRIMARY KEY, AUTO-INCREMENT;
+Tranche_Age;VARCHAR 255;Contacts;NOT NULL;
+Age;INT 110;Contacts;NOT NULL;
+Nom;VARCHAR 255;Contacts;NOT NULL;
+Prenom;VARCHAR 255;Contacts;NOT NULL;
+Email;VARCHAR 255;Contacts;NOT NULL, UNIQUE;
+Num_Telephone;INT;Contacts;NOT NULL;
+Message;VARCHAR;Contacts;NOT NULL;
+Date_Envoi;TIMESTAMP;Contacts;NOT NULL;
+Id_Sujets;INT;Contacts;FOREIGN KEY;
+Id_Type_Cours;INT;Contacts;FOREIGN KEY;
+Id;INT;Type_Cours;PRIMARY KEY, AUTO-INCREMENT;X
+Nom;VARCHAR;Type_Cours;NOT NULL;
+Id_Cours;INT;Type_Cours;FOREIGN KEY;
+Id;INT;Cours;PRIMARY KEY, AUTO-INCREMENT;X
+Nom;VARCHAR;Cours;NOT NULL;

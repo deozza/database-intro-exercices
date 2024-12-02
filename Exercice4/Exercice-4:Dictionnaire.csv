@@ -1,0 +1,16 @@
+﻿Propriété;Type;Entité;Contrainte;Identifiant
+Nom_Modele;VARCHAR 255;Guitare;PRIMARY KEY;X
+Nombre_Corde;INT;Guitare;NOT NULL;
+Nombre_Micro;INT;Guitare;NOT NULL;
+Matiere_Corps;VARCHAR 255;Guitare;NOT NULL;
+Matiere_Table;VARCHAR 255;Guitare;NOT NULL;
+Matiere_Manche;VARCHAR 255;Guitare;NOT NULL;
+Numero;INT;Devis;PRIMARY KEY, AUTO_INCREMENT;X
+Nom_Client;VARCHAR 255;Devis;NOT NULL;
+Prenom_Client;VARCHAR 255;Devis;NOT NULL;
+Date_Envoi;DATE;Devis;NOT NULL;
+#Modele_Guitare;VARCHAR 255;Devis;FOREIGN KEY, NOT NULL;
+Numero;INT;Facture;PRIMARY KEY, AUTO_INCREMENT;X
+Date_Envoi;DATE;Facture;NOT NULL;
+#Numero_Devis;INT;Facture;FOREIGN KEY, NOT NULL;
+Payee;BOOLEAN;Facture;NOT NULL;

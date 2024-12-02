@@ -1,0 +1,16 @@
+﻿Propriété;Type;Entité;Contrainte;Identifiant
+ID;INT;Animal;PRIMARY KEY, AUTO_INCREMENT;X
+Identifiant_Puce;VARCHAR 255;Animal;NOT NULL;
+Espece;VARCHAR 255;Animal;NOT NULL;
+Race;VARCHAR 255;Animal;NOT NULL;
+Nom;VARCHAR 255;Animal;NOT NULL;
+Date_de_Naissance;DATE;Animal;NOT NULL;
+ID;INT;Docteur;PRIMARY KEY, AUTO_INCREMENT;X
+Nom;VARCHAR 255;Docteur;NOT NULL;
+Prenom;VARCHAR 255;Docteur;NOT NULL;
+ID;INT;Consulttion;PRIMARY KEY, AUTO_INCREMENT;X
+Date_Heure_RDV;TIMESTAMP;Consulttion;NOT NULL;
+Presence;BOOLEAN;Consulttion;NOT NULL;
+Tarif;FLOAT 6,2;Consulttion;NOT NULL;
+ID_Docteur;INT;Consulttion;FOREIGN KEY;
+ID_Animal;INT;Consulttion;FOREIGN KEY;
