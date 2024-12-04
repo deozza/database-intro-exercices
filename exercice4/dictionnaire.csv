@@ -1,0 +1,13 @@
+Propriété;Type;Entité;Contrainte
+nom;varchar 255;guitar;not null primary key 
+nb_cordes;int;guitar;not null 
+nb_micro;int;guitar;not null
+m_corp;varchar 255;guitar;not null
+m_table;varchar 255;guitar;not null
+m_manche;varchar 255;guitar;not null
+num;varchar 255;devis;not null primary key 
+nom;varchar 255;devis;not null
+date_env;date;devis;not null
+num;varchar 255;facture;not null primary key 
+date_env;date;facture;not null
+payment;booleen;facture;not null
