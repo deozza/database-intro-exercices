@@ -13,7 +13,8 @@ CREATE TABLE oeuvre (
 CREATE TABLE auteur (
     id INT AUTO_INCREMENT PRIMARY KEY,
     nom VARCHAR(255) NOT NULL,
-    FOREIGN KEY (id_oeuvre) REFERENCES oeuvre(numero_catalogue) NOT NULL,
+    id_oeuvre INT NOT NULL,
+    FOREIGN KEY (id_oeuvre) REFERENCES oeuvre(numero_catalogue),
 );
 
 CREATE TABLE assureur (
@@ -26,8 +27,10 @@ CREATE TABLE assurance (
     id INT AUTO_INCREMENT PRIMARY KEY,
     prime INT NOT NULL,
     valeur INT NOT NULL,
-    FOREIGN KEY (id_oeuvre) REFERENCES oeuvre(numero_catalogue) NOT NULL,
-    FOREIGN KEY (id_assureur) REFERENCES assureur(id) NOT NULL,
+    id_oeuvre INT NOT NULL,
+    id_assureur INT NOT NULL,
+    FOREIGN KEY (id_oeuvre) REFERENCES oeuvre(numero_catalogue),
+    FOREIGN KEY (id_assureur) REFERENCES assureur(id),
 );
 
 CREATE TABLE salle (
@@ -48,6 +51,9 @@ CREATE TABLE emprunt (
     id INT AUTO_INCREMENT PRIMARY KEY,
     date_emprunt DATE NOT NULL,
     date_retour DATE NOT NULL,
+    id_oeuvre INT,
+    id_particulier INT,
+    id_salle INT,
     FOREIGN KEY (id_oeuvre) REFERENCES oeuvre(numero_catalogue),
     FOREIGN KEY (id_particulier) REFERENCES particulier(id),
     FOREIGN KEY (id_salle) REFERENCES salle(numero),
@@ -57,6 +63,8 @@ CREATE TABLE emprunt (
     id INT AUTO_INCREMENT PRIMARY KEY,
     date_emprunt DATE NOT NULL,
     date_retour DATE NOT NULL,
+    id_oeuvre INT,
+    id_particulier INT,
     FOREIGN KEY (id_oeuvre) REFERENCES oeuvre(numero_catalogue),
     FOREIGN KEY (id_particulier) REFERENCES particulier(id),
 );
