@@ -1,8 +1,8 @@
 Propriété, Commentaire, Entité, Type, Identifiant
 numero_ss, "", Enfant, INT(15), X 
-nom, "", animal, VARCHAR(255), ""
-prenom, "", animal, VARCHAR(255), ""
-code_ecole, "", animal, VARCHAR(255), ""
-nom, "", animal, DATE, ""
-code_postale, "", consultation, INT, X
-nom, "", consultation, DATETIME, ""
+nom, "", Enfant, VARCHAR(255), ""
+prenom, "", Enfant, VARCHAR(255), ""
+code_ecole, "", Ecole, INT, "X"
+nom, "", Ecole, VARCHAR(255), ""
+code_postale, "", commune, INT(6), X
+nom, "", commune, VARCHAR(255), ""
