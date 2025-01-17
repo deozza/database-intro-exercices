@@ -1,8 +1,8 @@
-PROPRIÉTÉ,TYPE,ENTITÉ,CONTRAINTE
-numero_ss,INT (15),Enfant,PRIMARY KEY
-nom,VARCHAR (255),Enfant,NOT NULL
-prenom,VARCHAR (255),Enfant,NOT NULL
-code_ecole,INT,Ecole,PRIMARY KEY
-nom,VARCHAR (255),Ecole,NOT NULL
-code_postale,INT(6),Commune,PRIMARY KEY
-nom,VARCHAR (255),Commune,NOT NULL
+Propriété, Commentaire, Entité, Type, Identifiant
+numero_ss, "", Enfant, INT(15), X 
+nom, "", animal, VARCHAR(255), ""
+prenom, "", animal, VARCHAR(255), ""
+code_ecole, "", animal, VARCHAR(255), ""
+nom, "", animal, DATE, ""
+code_postale, "", consultation, INT, X
+nom, "", consultation, DATETIME, ""
