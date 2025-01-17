@@ -1,0 +1,29 @@
+Propriété,Commentaire,Entité,Type,Identifiant
+id,AUTO_INCREMENT,authors,INT,PRIMARY KEY
+firstname,NOT NULL,authors,VARCHAR (255),
+lastname,NOT NULL,authors,VARCHAR (255),
+country,NOT NULL,authors,VARCHAR (255),
+date_of_birth,NOT NULL,authors,DATE,
+date_of_death,,authors,DATE,
+id,AUTO_INCREMENT,editors,INT,PRIMARY KEY
+name,NOT NULL,editors,VARCHAR (255),
+id,AUTO_INCREMENT,members,INT,PRIMARY KEY
+firstname,NOT NULL,members,VARCHAR (255),
+lastname,NOT NULL,members,VARCHAR (255),
+email,NOT NULL UNQUE,members,VARCHAR (255),
+date_of_birth,NOT NULL,members,DATE,
+registered,NOT NULL DEAFAULT FALSE,members,BOOLEAN,
+id,AUTO_INCREMENT,books,INT,PRIMARY KEY
+title,NOT NULL,books,VARCHAR (255),
+year,NOT NULL,books,INT,
+author_id,FOREIGN KEY NOT NULL,books,INT,
+isbn,NOT NULL,book_editions,VARCHAR (255),PRIMARY KEY
+book_id,FOREIGN KEY NOT NULL,book_editions,INT,
+editor_id,FOREIGN KEY NOT NULL,book_editions,INT,
+publication_date,NOT NULL,book_editions,DATE,
+id,AUTO_INCREMENT,loans,INT,PRIMARY KEY
+book_edition_isbn,FOREIGN KEY NOT NULL,loans,VARCHAR (255),
+member_id,FOREIGN KEY NOT NULL,loans,INT,
+loan_date,NOT NULL,loans,DATE,
+return_date,NOT NULL,loans,DATE,
+is_returned,NOT NULL DEFAULT FALSE,loans,BOOLEAN,
