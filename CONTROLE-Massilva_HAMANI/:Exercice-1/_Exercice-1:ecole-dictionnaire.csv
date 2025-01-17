@@ -1,0 +1,8 @@
+Propriété,Commentaire,Entité,Type,Identifiant
+numero_ss,NOT NULL,enfant,INT (13),PRIMARY KEY
+nom_enf,NOT NULL,enfant,VARCHAR (255),
+prenom,NOT NULL,enfant,VARCHAR (255),
+code_ecole,NOT NULL,ecole,INT  ,PRIMARY KEY
+nom_ec,NOT NULL,ecole,VARCHAR (255),
+code_postal,NOT NULL,commune,INT (5),PRIMARY KEY
+nom_c,NOT NULL,commune,VARCHAR (255),
