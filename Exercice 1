@@ -1,0 +1,14 @@
+Table,Attribut,Type,Description,Contrainte
+Enfant,Numero SS,varchar(15),numéro de sécurité sociale de l'enfant,Clé primaire
+Enfant,nomenf,varchar(50),Nom de l'enfant,
+Enfant,prenom,varchar(50),Prenom de l'enfant,
+Commune,codepostal,varchar(5),Code postal unique de la commune,Clé primaire
+Commune,NomC,varchar(100),nom de la commune,
+Ecole,CodeEcole,varchar(20),identifiant de l'ecole unique,Clé primaire
+Ecole,NomEC,varchar(100),Nom de l'ecole,
+Frequente,Numero SS,varchar(15),numéro de sécurité sociale de l'enfant,Clé etrangère vers Enfant numeroSS
+Frequente,Code Ecole,varchar(20),Identifiant de l'ecole frequenté,Clé etrangère vers Ecole Code ecole
+Habite,Numero SS,varchar(15),numéro de sécurité sociale de l'enfant,Clé etrangère vers Enfant numeroSS
+Habite,code postal,varchar(5),code postal de la commune ou l'enfant reside,Clé etrangère vers commune Code postal
+Se Situe,Code ecole,varchar(20),identifiant de l'ecole,Clé etrangère vers Ecole Code ecole
+Se Situe,code postal,varchar(5),code postal de la commune ou se trouve l'ecole,lé etrangère vers Commune Code postal
