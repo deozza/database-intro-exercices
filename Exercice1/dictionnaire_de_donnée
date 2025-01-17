@@ -1,0 +1,44 @@
+Dictionnaire de donnée Ecole : 
+
+| Propriété  | Type | Table | Contraintes |
+| --- | --- | --- | --- |
+| NumeroSS | INT | enfant | AUTO INCREMENT, PRIMARY KEY |
+| NomENF | VARCHAR (255) | enfant | NOT NULL |
+| Prénom | VARCHAR (255) | enfant | NOT NULL |
+| CodeEcole | INT | ecole | PRIMARY KEY |
+| NomEC | VARCHAR (255) | ecole | NOT NULL |
+| CodePostale | INT | commune | PRIMARY KEY |
+| NomC | VARCHAR (255) | commune | NOT NULL |
+
+Dictionnaire de donnée Librairie :
+
+| Propriété  | Type | Table | Contraintes |
+| --- | --- | --- | --- |
+| id | INT | authors | AUTO INCREMENT, PRIMARY KEY |
+| firstname | VARCHAR (255) | authors | NOT NULL |
+| lastname | VARCHAR (255) | authors | NOT NULL |
+| country | VARCHAR (255) | authors | NOT NULL |
+| date-of-birth | DATE | authors | NOT NULL |
+| date-of-death | DATE | authors |  |
+| id | INT | editors | AUTO INCREMENT, PRIMARY KEY |
+| name | VARCHAR (255) | editors | NOT NULL |
+| id | INT | menbers | AUTO INCREMENT, PRIMARY KEY |
+| firstname | VARCHAR (255) | menbers | NOT NULL |
+| lastname | VARCHAR (255) | menbers | NOT NULL |
+| email | VARCHAR (255) | menbers | UNIQUE, NOT NULL |
+| date_of_birth | DATE | menbers | NOT NULL |
+| registered | BOOLEAN | menbers | NOT NULL, DEFAULT FALSE |
+| id | INT | books | AUTO INCREMENT, PRIMARY KEY |
+| title | VARCHAR (255) | books | NOT NULL |
+| year | INT | books | NOT NULL |
+| author_id | INT | books | NOT NULL, FOREIGN KEY |
+| isbn | VARCHAR (255) | book_editions | NOT NULL, PRIMARY KEY |
+| book_id | INT | book_editions | NOT NULL, FOREIGN KEY |
+| editor_id | INT | book_editions | NOT NULL, FOREIGN KEY |
+| publication_date | DATE | book_editions | NOT NULL |
+| id | INT | loans | AUTO INCREMENT, PRIMARY KEY |
+| book_edition_isbn | VARCHAR (255) | loans | NOT NULL, FOREIGN KEY |
+| menbers_id | INT | loans | NOT NULL, FOREIGN KEY |
+| loan_date | DATE | loans | NOT NULL |
+| return_date | DATE | loans | NOT NULL |
+| is_returned | BOOLEAN | loans | NOT NULL, DEFAULT FALSE |
