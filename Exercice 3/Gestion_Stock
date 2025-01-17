@@ -1,0 +1,25 @@
+DROP DATABASE IF EXISTS GCIVIL;
+CREATE DATABASE GCIVIL;
+
+USE GCIVIL;
+
+CREATE TABLE Produits (
+    CodeProd INT PRIMARY KEY,
+    DesignationProd VARCHAR(100) NOT NULL,
+    PrixUnitaire DECIMAL(10, 2) NOT NULL
+);
+
+CREATE TABLE Fournisseurs (
+    NumF INT PRIMARY KEY,
+    NomF VARCHAR(100) NOT NULL,
+    AdressF VARCHAR(200) NOT NULL
+);
+
+CREATE TABLE Fournir (
+    CodeProd INT,
+    NumF INT,
+    PrixAchat DECIMAL(10, 2) NOT NULL,
+    PRIMARY KEY (CodeProd, NumF),
+    FOREIGN KEY (CodeProd) REFERENCES Produits(CodeProd),
+    FOREIGN KEY (NumF) REFERENCES Fournisseurs(NumF)
+);

@@ -1,0 +1,82 @@
+DROP DATABASE IF EXISTS exposition_art;
+CREATE DATABASE exposition_art;
+
+USE exposition_art;
+
+CREATE TABLE Oeuvre (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    titre VARCHAR(255) NOT NULL,
+    date_acquisition DATE,
+    numero_catalogue VARCHAR(50),
+    salle_id INT,
+    exposition_id INT
+);
+
+CREATE TABLE Auteur (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    nom VARCHAR(100) NOT NULL,
+    prenom VARCHAR(100)
+);
+
+CREATE TABLE Oeuvre_Auteur (
+    oeuvre_id INT,
+    auteur_id INT,
+    PRIMARY KEY (oeuvre_id, auteur_id),
+    FOREIGN KEY (oeuvre_id) REFERENCES Oeuvre(id),
+    FOREIGN KEY (auteur_id) REFERENCES Auteur(id)
+);
+
+CREATE TABLE Salle (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    numero INT NOT NULL,
+    nom VARCHAR(100),
+    nombre_oeuvres INT,
+    type_eclairage VARCHAR(50)
+);
+
+CREATE TABLE Exposition (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    nom VARCHAR(255) NOT NULL,
+    date_debut DATE,
+    duree_pret INT
+);
+
+CREATE TABLE Proprietaire (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    titre VARCHAR(10),
+    prenom VARCHAR(100),
+    nom VARCHAR(100) NOT NULL,
+    adresse VARCHAR(255)
+);
+
+CREATE TABLE Emprunt (
+    oeuvre_id INT,
+    proprietaire_id INT,
+    date_debut DATE,
+    duree INT,
+    PRIMARY KEY (oeuvre_id, proprietaire_id),
+    FOREIGN KEY (oeuvre_id) REFERENCES Oeuvre(id),
+    FOREIGN KEY (proprietaire_id) REFERENCES Proprietaire(id)
+);
+
+CREATE TABLE Assurance (
+    oeuvre_id INT PRIMARY KEY,
+    montant_prime DECIMAL(10, 2),
+    valeur_assuree DECIMAL(10, 2),
+    nom_compagnie VARCHAR(100),
+    adresse_compagnie VARCHAR(255),
+    FOREIGN KEY (oeuvre_id) REFERENCES Oeuvre(id)
+);
+
+CREATE TABLE Type_Oeuvre (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    nom VARCHAR(50) NOT NULL
+);
+
+CREATE TABLE Proprietaire_Type_Oeuvre (
+    proprietaire_id INT,
+    type_oeuvre_id INT,
+    PRIMARY KEY (proprietaire_id, type_oeuvre_id),
+    FOREIGN KEY (proprietaire_id) REFERENCES Proprietaire(id),
+    FOREIGN KEY (type_oeuvre_id) REFERENCES Type_Oeuvre(id)
+);
