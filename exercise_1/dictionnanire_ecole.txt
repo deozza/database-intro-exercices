@@ -1,1 +1,14 @@
 
+\begin{table}[]
+\begin{tabular}{lllll}
+propriétés   & commentaire & entité  & type         & identifiant \\
+NumeroSS     & primary key & enfant  & INT NOT NULL & x           \\
+NomENF       &             & enfant  & VARCHAR 255  &             \\
+prenom       &             & enfant  & VARCHAR 255  &             \\
+CodeEcole    & primary key & ecole   & INT NOT NULL & X           \\
+nomec        &             & ecole   & INT NOT NULL &             \\
+Code_postale &             & commune & INT          & X           \\
+NomC         &             & commune & VARCHAR      &             \\
+             &             &         &              &            
+\end{tabular}
+\end{table}
