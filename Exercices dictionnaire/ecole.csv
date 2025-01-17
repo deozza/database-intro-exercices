@@ -1,0 +1,8 @@
+Propriété;Contrainte;Entité;Type
+NuméroSS;PRIMARY KEY;Enfant;INT
+NomENFT;NOT NULL;Enfant;VARCHAR
+Prénom;NOT NULL;Enfant;VARCHAR
+CodeEcole;PRIMARY KEY;Ecole;INT
+NomEC;NOT NULL;Ecole;VARCHAR
+Code_Postal;PRIMARY KEY;Commune;INT
+NomC;NOT NULL;Commune;VARCHAR
