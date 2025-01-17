@@ -1,10 +1,9 @@
-SELECT COUNT(*) FROM orders
-INNER JOIN order_items ON orders.id = orders_items.order_id
-INNER JOIN products ON order_items.product_id = products.id
-WHERE products.id = 2456;
+SELECT ORDER_ITEMS.quantity FROM ORDER_ITEMS
+INNER JOIN PRODUCTS ON ORDER_ITEMS.product_id = PRODUCTS.id
+WHERE PRODUCTS.id = 2456;
 
-SELECT name FROM products WHERE stock = 0;
+SELECT name FROM PRODUCTS WHERE stock = 0;
 
-SELECT id FROM orders WHERE order_date > ;
+SELECT id FROM ORDERS WHERE order_date > CURRENT_DATE();
 
-SELECT name FROM CUSTOMERS WHERE email LIKE '%@gmail.com'
+SELECT name FROM CUSTOMER WHERE email LIKE '%@gmail.com';
