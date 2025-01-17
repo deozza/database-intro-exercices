@@ -1,0 +1,13 @@
+PROPRIÉTÉ,TYPE,ENTITÉ,CONTRAINTE
+numero_ss,VARCHAR (255),Enfant,NOT NULL
+nom,VARCHAR (255),Animal,NOT NULL
+prenom,VARCHAR (255),Animal,PRIMARY KEY
+id_puce,INT,Animal,PRIMARY KEY
+date_de_naissance,DATE,Animal,NOT NULL
+id_consultation,INT,Consulter,PRIMARY KEY
+date_rdv,DATE,Consulter,NOT NULL
+heure_rdv,DATETIME,Consulter,NOT NULL
+presence,BOOLEAN,Consulter,NOT NULL
+tarif,"FLOAT (6,2)",Consulter,NOT NULL
+id_animal,INT,Consulter,"FOREIGN KEY, NOT NULL"
+docteur,VARCHAR (255),Consulter,NOT NULL
