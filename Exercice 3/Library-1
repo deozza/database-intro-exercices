@@ -1,0 +1,2 @@
+SELECT lastname, firstname
+FROM authors;
