@@ -19,12 +19,15 @@ CREATE TABLE approvisionnement (
     id INT AUTO_INCREMENT PRIMARY KEY,
     prix_achat INT NOT NULL,
     nb_produit INT NOT NULL,
-    FOREIGN KEY (id_fournisseur) REFERENCES fournisseur(numero) NOT NULL,
-    FOREIGN KEY (id_produit) REFERENCES produit(code) NOT NULL,
+    id_fournisseur INT NOT NULL,
+    id_fournisseur INT NOT NULL,
+    FOREIGN KEY (id_fournisseur) REFERENCES fournisseur(numero),
+    FOREIGN KEY (id_produit) REFERENCES produit(code),
 );
 
 CREATE TABLE livraison (
     id INT AUTO_INCREMENT PRIMARY KEY,
     prix INT NOT NULL,
-    FOREIGN KEY (id_approvisionnement) REFERENCES approvisionnement(id) NOT NULL,
+    id_approvisionnement INT NOT NULL,
+    FOREIGN KEY (id_approvisionnement) REFERENCES approvisionnement(id),
 );
